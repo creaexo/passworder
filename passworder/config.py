@@ -29,10 +29,9 @@ class Settings(BaseSettings):
         default="AESGCM", description="Symmetric encryption algorithm"
     )
 
-    # Auth
-    secret_key: str = Field(default=..., description="Secret key for JWT tokens")
-    token_expire_minutes: int = Field(default=60 * 24, description="JWT expiration time")
 
     class Config:
         env_file = ".env"
         env_file_encoding = "utf-8"
+
+settings = Settings()
