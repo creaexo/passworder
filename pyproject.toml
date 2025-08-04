@@ -7,6 +7,7 @@ authors = [
     { name = 'creaexo"', email = 'creaexo@gmail.com' },
 ]
 dependencies = [
+    "cryptography==45.0.5",
     "pydantic==2.11.7",
     "pydantic-settings==2.10.1",
     "sqlalchemy==2.0.42"
